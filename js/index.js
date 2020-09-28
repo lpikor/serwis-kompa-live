@@ -14,5 +14,6 @@ hamburger.addEventListener('click', handleClick);
 dropdownArrow.forEach(arrow => {
     arrow.addEventListener('click', () => {
         arrow.parentNode.querySelector('.nav__inner-list').classList.toggle('nav__inner-list--active');
+        arrow.parentNode.classList.toggle('nav__item--active');
     });
 })
